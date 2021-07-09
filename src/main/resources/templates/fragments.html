@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<div th:fragment="linkbar">
+	<div id="menu-bar">
+		<nav id="nav">
+			<span class="logo">wavyway</span>
+			<input type="checkbox" id="menu-toggle"/>
+			<label for="menu-toggle" class="label-toggle"></label>
+			<ul class="main-menu">
+				<li class="main-menu__item">
+					<a id="button-delete" class="main-menu__link" title="Eliminar datos">
+						<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+							<path fill="#ffffff"
+							      d="M15.46,15.88L16.88,14.46L19,16.59L21.12,14.46L22.54,15.88L20.41,18L22.54,20.12L21.12,21.54L19,19.41L16.88,21.54L15.46,20.12L17.59,18L15.46,15.88M4,3H18A2,2 0 0,1 20,5V12.08C18.45,11.82 16.92,12.18 15.68,13H12V17H13.08C12.97,17.68 12.97,18.35 13.08,19H4A2,2 0 0,1 2,17V5A2,2 0 0,1 4,3M4,7V11H10V7H4M12,7V11H18V7H12M4,13V17H10V13H4Z"/>
+						</svg>
+					</a>
+				</li>
+				<li class="main-menu__item">
+					<a id="button-excel" class="main-menu__link" title="Descargar datos en formato Excel">
+						<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+							<path fill="#ffffff" d="M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z"/>
+						</svg>
+					</a>
+				</li>
+				<li class="main-menu__item">
+					<a id="button-exit" class="main-menu__link" title="Salir">
+						<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+							<path fill="#ffffff"
+							      d="M17,17.25V14H10V10H17V6.75L22.25,12L17,17.25M13,2A2,2 0 0,1 15,4V8H13V4H4V20H13V16H15V20A2,2 0 0,1 13,22H4A2,2 0 0,1 2,20V4A2,2 0 0,1 4,2H13Z"/>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+<tr th:fragment="table_part" th:each="sr : ${singleRecord}" class="tr-body">
+	<td data-label="ID:" th:utext="${sr.id}" class="td-id"></td>
+	<td data-label="Nombre:" th:utext="${sr.userName}"></td>
+	<td data-label="Fecha:" th:utext="${sr.date}"></td>
+	<td data-label="Código QR:" th:utext="${sr.qrCode}" class="qr-code"></td>
+	<td data-label="Latitud:" th:utext="${sr.latCoord}"></td>
+	<td data-label="Longitud:" th:utext="${sr.longCoord}"></td>
+	<td>
+		<div class="td-button-map">
+			<button th:type="button"
+			        class="button-table onclick_map"
+			        th:title="'Ver mapa N°' + ${sr.id}">
+				<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+					<path fill="#ffffff"
+					      d="M12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5M12,2A7,7 0 0,1 19,9C19,14.25 12,22 12,22C12,22 5,14.25 5,9A7,7 0 0,1 12,2M12,4A5,5 0 0,0 7,9C7,10 7,12 12,18.71C17,12 17,10 17,9A5,5 0 0,0 12,4Z"/>
+				</svg>
+			</button>
+		</div>
+	</td>
+</tr>
+
+</body>
+</html>

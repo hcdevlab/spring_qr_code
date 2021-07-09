@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+	<title>Panel de ingreso</title>
+
+	<link rel="stylesheet" media="all" type="text/css" href="../../css/style.css"/>
+	<script type="text/javascript" src="../../js/functions_login.js" defer></script>
+</head>
+<body>
+<input type="hidden" id="crossToken" th:name="${_csrf.headerName}" th:value="${_csrf.token}"/>
+<div class="base-container">
+	<div class="base-content">
+
+		<table border="0" align="center" class="table-login">
+			<tr align="center">
+				<td colspan="2">Panel de ingreso</td>
+			</tr>
+			<tr>
+				<td class="td-login-value"><input type="text" id="username_login" name="username_custom" placeholder="Usuario" class="input-text-login"/></td>
+			</tr>
+			<tr>
+				<td class="td-login-value"><input type="password" id="password_login" name="password_custom" placeholder="Contraseña" class="input-text-login"/></td>
+			</tr>
+			<tr align="center">
+				<td colspan="2">
+					<div class="button-login-td">
+						<button type="button" id="login_button" class="button-login">
+							<svg style="width:24px;height:24px" viewBox="0 0 24 24" class="icon-text">
+								<path fill="#ffffff" d="M10,17.25V14H3V10H10V6.75L15.25,12L10,17.25M8,2H17A2,2 0 0,1 19,4V20A2,2 0 0,1 17,22H8A2,2 0 0,1 6,20V16H8V20H17V4H8V8H6V4A2,2 0 0,1 8,2Z"/>
+							</svg>
+							Enviar
+						</button>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+</body>
+</html>

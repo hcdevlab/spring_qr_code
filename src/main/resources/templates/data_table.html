@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<title>Datos de la tabla</title>
+	<link rel="stylesheet" media="all" type="text/css" href="/css/style.css"/>
+	<script type="text/javascript" src="/js/functions.js" defer></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7TH4LDle4zr-8yZQQl6B-drYpY8LCul4"></script>
+</head>
+<body>
+<div th:include="fragments :: linkbar"></div>
+<div class="base-container">
+	<div class="base-content">
+		<input type="hidden" id="crossToken" th:name="${_csrf.headerName}" th:value="${_csrf.token}"/>
+
+		<h1 th:text="${message}" class="title_h1"></h1>
+
+		<h3>Datos de localización</h3>
+
+		<div id="pagination-bar">
+		</div>
+
+		<div class="div-table">
+			<table align="center" class="table-general">
+				<thead>
+				<tr>
+					<td>ID</td>
+					<td>Nombre</td>
+					<td class="date-class">Fecha</td>
+					<td>QR code</td>
+					<td>Latitud</td>
+					<td>Longitud</td>
+					<td>Mapa</td>
+				</tr>
+				</thead>
+				<tfoot>
+				<tr align="center" id="table-foot">
+				</tr>
+				</tfoot>
+				<tbody id="block_content">
+				</tbody>
+			</table>
+		</div>
+		<br/>
+		<br/>
+		<br/>
+
+		<div id="popup-container-map" class="modal">
+			<div id="modal-map" class="modal-content">
+
+				<div class="modal-header">
+					<div class="close" id="close_button_update">&times;</div>
+					<h4>Localización</h4>
+				</div>
+
+				<div id="map-container" class="modal-body">
+					<div id="general-map" class="map-style"></div>
+				</div>
+
+				<div class="modal-footer">
+					<button id="cancel_button_update" class="footer-button">Cerrar</button>
+				</div>
+
+			</div>
+		</div>
+
+		<div id="popup-ask" class="modal-ask">
+
+			<div class="modal-ask-content">
+				<div class="modal-ask-header">
+					<div class="close-modal-ask" id="button_delete_close">&times;</div>
+					<h3>Eliminar datos</h3>
+				</div>
+
+				<div class="modal-ask-body">
+					<h5>Confirma la eliminación de los datos?</h5>
+				</div>
+
+				<div class="modal-ask-footer">
+					<button id="button_delete_yes" class="button-delete">Eliminar</button>
+					<button id="button_delete_cancel" class="button-cancel">Cancelar</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+</body>
+</html>

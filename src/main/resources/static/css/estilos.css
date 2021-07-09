@@ -1,0 +1,1273 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+{
+	margin         : 0;
+	padding        : 0;
+	border         : 0;
+	font-size      : 100%;
+	font           : inherit;
+	vertical-align : baseline
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+{
+	display : block
+}
+
+body
+{
+	line-height : 1
+}
+
+ol, ul
+{
+	list-style : none
+}
+
+blockquote, q
+{
+	quotes : none
+}
+
+blockquote:before, blockquote:after, q:before, q:after
+{
+	content : '';
+	content : none
+}
+
+table
+{
+	border-collapse : collapse;
+	border-spacing  : 0
+}
+
+:root
+{
+	--title-scale  : scale(1);
+	--title-height : 167px
+}
+
+@font-face
+{
+	font-family : 'icons';
+	src         : url("../fonts/icomoon.woff") format("woff")
+}
+
+.group:after
+{
+	content : "";
+	display : table;
+	clear   : both
+}
+
+::selection
+{
+	background : #ccc
+}
+
+a:link, a:visited
+{
+	text-decoration : none;
+	color           : #555;
+	transition      : 0.2s ease
+}
+
+a:hover
+{
+	color : #333
+}
+
+p a
+{
+	border-bottom : 1px solid #aaa
+}
+
+i
+{
+	font-style : italic
+}
+
+blockquote
+{
+	font-style : italic;
+	font-size  : 1.5em;
+	text-align : center
+}
+
+.sr-only
+{
+	position : absolute;
+	width    : 1px;
+	height   : 1px;
+	padding  : 0;
+	margin   : -1px;
+	overflow : hidden;
+	clip     : rect(0, 0, 0, 0);
+	border   : 0
+}
+
+.icon:after
+{
+	font-family             : 'icons' !important;
+	speak                   : none;
+	font-style              : normal;
+	font-weight             : normal;
+	font-variant            : normal;
+	text-transform          : none;
+	line-height             : 1;
+	-webkit-font-smoothing  : antialiased;
+	-moz-osx-font-smoothing : grayscale
+}
+
+body
+{
+	font-size                  : 62.5%;
+	box-shadow                 : inset 0 0 50px 0 rgba(0, 0, 0, 0.15);
+	font-family                : 'Source Sans Pro', sans-serif;
+	background-color           : #fefefe;
+	color                      : rgba(0, 0, 0, 0.8);
+	height                     : 100%;
+	text-rendering             : optimizeLegibility;
+	-webkit-font-smoothing     : antialiased;
+	-moz-osx-font-smoothing    : grayscale;
+	-moz-font-feature-settings : "liga" on;
+	-webkit-text-size-adjust   : 100%
+}
+
+header
+{
+	font-family : 'Oxygen', sans-serif !important
+}
+
+.no-vars .title
+{
+	min-height : 167px
+}
+
+.title
+{
+	font-size        : 0.6em;
+	font-size        : 6px;
+	min-height       : var(--title-height);
+	position         : relative;
+	transform-origin : left top 0;
+	transform        : var(--title-scale);
+	margin           : 0 12px
+}
+
+.title h1
+{
+	position    : absolute;
+	top         : 2.9em;
+	left        : 3.4em;
+	font-size   : 1em;
+	font-weight : 700;
+	margin      : 0;
+	padding     : 0;
+	line-height : 1
+}
+
+.title h1 span
+{
+	display : block
+}
+
+.title h1 span.lorem
+{
+	font-size      : 10.2em;
+	letter-spacing : -0.036em
+}
+
+.title h1 span.ipsum
+{
+	font-size      : 7.6em;
+	margin-left    : 1.39em;
+	line-height    : 0.65;
+	letter-spacing : -0.017em
+}
+
+.title h1 span.generator
+{
+	color          : #056294;
+	position       : absolute;
+	font-size      : 2.5em;
+	font-weight    : 400;
+	letter-spacing : -0.015em;
+	top            : .68em;
+	left           : 14.6em
+}
+
+.title > span
+{
+	position : absolute;
+	display  : block
+}
+
+.title .consectetur
+{
+	font-size      : 2.8em;
+	top            : 1.67857em;
+	left           : 1.10714em;
+	letter-spacing : 0.01em;
+	color          : rgba(0, 0, 0, 0.6)
+}
+
+.title .qui
+{
+	font-size : 3.2em;
+	top       : 4.0625em;
+	left      : 2.15625em;
+	color     : rgba(0, 0, 0, 0.4)
+}
+
+.title .elit
+{
+	font-size : 3.3em;
+	top       : 3.81818em;
+	left      : 2.21212em;
+	color     : rgba(0, 0, 0, 0.5)
+}
+
+.title .sed
+{
+	font-size : 2.9em;
+	top       : 5.48276em;
+	left      : 2.51724em;
+	color     : rgba(0, 0, 0, 0.3)
+}
+
+.title .labore
+{
+	font-size : 2.5em;
+	top       : 7.8em;
+	left      : 1.6em;
+	color     : rgba(0, 0, 0, 0.5)
+}
+
+.title .sit
+{
+	font-size : 4em;
+	top       : 5.725em;
+	left      : 1.925em;
+	color     : rgba(0, 0, 0, 0.5)
+}
+
+.title .dolor
+{
+	font-size      : 3.4em;
+	letter-spacing : -0.01em;
+	top            : 5.58824em;
+	left           : 4.23529em;
+	color          : rgba(0, 0, 0, 0.5)
+}
+
+.title .adipiscing
+{
+	font-size : 3.7em;
+	top       : 6.08108em;
+	left      : 2.35135em;
+	color     : rgba(0, 0, 0, 0.4)
+}
+
+.title .do
+{
+	font-size : 1.8em;
+	top       : 10.77778em;
+	left      : 15.88889em;
+	color     : rgba(0, 0, 0, 0.6)
+}
+
+.title .amet
+{
+	font-size : 3.3em;
+	top       : 5.90909em;
+	left      : 9.78788em;
+	color     : rgba(0, 0, 0, 0.7)
+}
+
+.title .magna
+{
+	font-size : 2em;
+	top       : 9.65em;
+	left      : 16.25em;
+	color     : rgba(0, 0, 0, 0.6)
+}
+
+.title .tempor
+{
+	font-size : 3.5em;
+	top       : 1.34286em;
+	left      : 11.57143em;
+	color     : rgba(0, 0, 0, 0.6);
+	display   : none
+}
+
+.title .ut2
+{
+	font-size : 3.3em;
+	top       : 1.27273em;
+	left      : 12.33333em;
+	color     : rgba(0, 0, 0, 0.6)
+}
+
+.title .et
+{
+	font-size : 3.3em;
+	top       : 2.33333em;
+	left      : 12.33333em;
+	color     : rgba(0, 0, 0, 0.4)
+}
+
+.title .enim
+{
+	font-size : 2.2em;
+	top       : 5.22727em;
+	left      : 18.54545em;
+	color     : rgba(0, 0, 0, 0.3)
+}
+
+.title .incididunt
+{
+	font-size      : 3.9em;
+	letter-spacing : -0.01em;
+	top            : 3.66667em;
+	left           : 11.41026em;
+	color          : rgba(0, 0, 0, 0.5)
+}
+
+.title .libero
+{
+	font-size : 3em;
+	top       : 4.7em;
+	left      : 14.96667em;
+	color     : rgba(0, 0, 0, 0.4)
+}
+
+.title .r
+{
+	-webkit-transform        : rotate(90deg);
+	-webkit-transform-origin : left top 0;
+	transform                : rotate(90deg);
+	transform-origin         : left top 0
+}
+
+@keyframes main
+{
+	0%
+	{
+		transform : translateY(35px);
+		opacity   : 0
+	}
+	100%
+	{
+		transform : translateY(0px);
+		opacity   : 1
+	}
+}
+
+main, .inner
+{
+	width      : 100%;
+	min-height : 1px
+}
+
+main
+{
+	position   : relative;
+	background : #fff;
+	box-shadow : 0 0 20px 0 rgba(50, 50, 50, 0.1);
+	display    : block
+}
+
+.js .main
+{
+	transform : translateY(35px);
+	opacity   : 0
+}
+
+.js main.transition
+{
+	animation : main 0.7s ease
+}
+
+h2, h3, h4, h5
+{
+	font-family    : 'Oxygen', sans-serif;
+	font-size      : 3.5em;
+	color          : #056294;
+	margin-bottom  : 32px;
+	letter-spacing : -.003em;
+	font-weight    : 700
+}
+
+h4, h5
+{
+	margin-bottom : 12px;
+	color         : #777
+}
+
+h4
+{
+	font-size : 1.7em
+}
+
+h5
+{
+	font-size : 1.4em
+}
+
+p
+{
+	font-size      : 1.8em;
+	margin-bottom  : 20px;
+	line-height    : 1.5;
+	letter-spacing : -.003em
+}
+
+.small
+{
+	font-size     : 1.4em;
+	margin-bottom : 10px
+}
+
+.generate
+{
+	padding : 30px
+}
+
+.generate .row
+{
+	margin-top : 50px
+}
+
+.generate .col2
+{
+	margin-top : 46px
+}
+
+.input-wrapper
+{
+	text-align    : center;
+	margin-bottom : 22px;
+	position      : relative
+}
+
+.input-wrapper:before, .input-wrapper:after
+{
+	content    : "";
+	height     : 1px;
+	background : #ccc;
+	position   : absolute;
+	width      : 25%;
+	top        : 33px
+}
+
+.input-wrapper:before
+{
+	left : 0
+}
+
+.input-wrapper:after
+{
+	right : 0
+}
+
+.button-list
+{
+	display : block
+}
+
+.button-list li
+{
+	margin-bottom : 14px;
+	position      : relative
+}
+
+.toggle-output
+{
+	display    : block;
+	position   : relative;
+	margin-top : 23px;
+	min-height : 20px
+}
+
+.toggle-output li
+{
+	float      : left;
+	width      : 50%;
+	box-sizing : border-box
+}
+
+.toggle-output li:first-child
+{
+	text-align    : right;
+	padding-right : 8px
+}
+
+.toggle-output li:first-child:after
+{
+	content    : "/";
+	padding    : 0 8px 0 6px;
+	position   : absolute;
+	top        : 40%;
+	background : #fff
+}
+
+.toggle-output li:first-child a:before
+{
+	left : -21px
+}
+
+.toggle-output li:last-child
+{
+	text-align   : left;
+	padding-left : 8px
+}
+
+.toggle-output li:last-child a:before
+{
+	right : -21px
+}
+
+.toggle-output li a
+{
+	border-radius : 999em;
+	display       : inline-block;
+	position      : relative
+}
+
+.toggle-output li a:before
+{
+	content    : "";
+	width      : 20px;
+	height     : 1px;
+	background : #fff;
+	position   : absolute;
+	top        : 50%
+}
+
+.toggle-output:before
+{
+	content    : "";
+	height     : 1px;
+	background : #ccc;
+	position   : absolute;
+	top        : 50%;
+	left       : 0;
+	width      : 100%
+}
+
+#output
+{
+	text-align    : justify;
+	font-size     : 0.9em;
+	height        : auto;
+	max-height    : 700px;
+	overflow      : auto;
+	padding-right : 12px;
+	box-sizing    : border-box;
+	transition    : opacity 0.1s ease, transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+	position      : relative;
+	transform     : translateY(0px)
+}
+
+#output ul
+{
+	list-style-type     : disc;
+	font-size           : 2em;
+	list-style-position : inside
+}
+
+#output ul li
+{
+	margin-bottom : 10px
+}
+
+.output-container
+{
+	position    : relative;
+	padding-top : 26px
+}
+
+.output-container.scrollbars:after
+{
+	content    : "";
+	position   : absolute;
+	bottom     : 0;
+	width      : 100%;
+	height     : 20px;
+	background : linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+	filter     : blur(2px)
+}
+
+.output-container.fade #output
+{
+	opacity   : 0;
+	transform : translateY(14px)
+}
+
+.output-container.fade:before
+{
+	content       : "";
+	width         : 30px;
+	height        : 30px;
+	border-top    : 4px solid #056294;
+	border-bottom : 4px solid #056294;
+	border-left   : 4px solid #056294;
+	border-right  : 4px solid white;
+	border-radius : 50%;
+	position      : absolute;
+	margin        : auto;
+	left          : 0;
+	right         : 0;
+	top           : 35px;
+	opacity       : 0;
+	animation     : spin 1.1s infinite linear 0.5s
+}
+
+@keyframes spin
+{
+	0%
+	{
+		opacity           : 1;
+		-webkit-transform : rotate(0deg);
+		transform         : rotate(0deg)
+	}
+	100%
+	{
+		opacity           : 1;
+		-webkit-transform : rotate(360deg);
+		transform         : rotate(360deg)
+	}
+}
+
+#output-html
+{
+	width   : 0;
+	height  : 0;
+	opacity : 0;
+	padding : 0;
+	margin  : 0
+}
+
+.lists:after
+{
+	content : "\e901"
+}
+
+.bytes:after
+{
+	content : "\e900"
+}
+
+.words:after
+{
+	content : "\e903"
+}
+
+.paragraphs:after
+{
+	content : "\e902"
+}
+
+.text-input
+{
+	-webkit-appearance : none;
+	font-family        : 'Source Sans Pro', sans-serif;
+	padding            : 20px;
+	width              : 30px;
+	height             : 20px;
+	font-size          : 20px;
+	border-radius      : 8px;
+	border             : 1px solid #eee;
+	text-align         : center;
+	outline            : 0;
+	box-shadow         : 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+	color              : #333;
+	transition         : box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1), width 500ms ease
+}
+
+.text-input:focus
+{
+	box-shadow : 0 3px 8px 0 rgba(0, 0, 0, 0.2)
+}
+
+.text-input.two-digits
+{
+	width : 40px
+}
+
+.text-input.three-digits
+{
+	width : 60px
+}
+
+.primary-btn
+{
+	box-shadow       : 0 0 3px 0 transparent;
+	background-color : white;
+	color            : inherit;
+	border           : 1px solid rgba(0, 0, 0, 0.3);
+	border-radius    : 999em;
+	padding          : 12px 48px 12px 29px;
+	cursor           : pointer;
+	width            : 100%;
+	font-size        : 1.6em;
+	transition       : 0.3s ease;
+	outline          : 0
+}
+
+.primary-btn:focus, .primary-btn:hover
+{
+	box-shadow       : 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+	background-color : #056294;
+	color            : white
+}
+
+.primary-btn:focus:after, .primary-btn:hover:after
+{
+	color : #fff
+}
+
+.primary-btn:active
+{
+	box-shadow : 0 2px 3px 0 rgba(0, 0, 0, 0.1), inset 0 0 10px 0 rgba(0, 0, 0, 0.4)
+}
+
+.primary-btn:after
+{
+	position  : absolute;
+	right     : 25%;
+	top       : 11px;
+	font-size : 1.6em;
+	color     : #ccc
+}
+
+.primary-btn.active
+{
+	border : 1px solid #056294
+}
+
+.mini-btn
+{
+	font-size  : 1.4em;
+	background : #e7e7e7;
+	padding    : 0.6em;
+	border     : 1px solid #e7e7e7
+}
+
+.mini-btn:hover, .mini-btn:focus
+{
+	background : #ccc;
+	color      : #555
+}
+
+.mini-btn.active
+{
+	border : 1px solid #ccc
+}
+
+.copy
+{
+	position : absolute;
+	top      : -1.1em;
+	right    : 0
+}
+
+.copy:after
+{
+	content        : "\e92d";
+	font-size      : 1.3em;
+	color          : #555;
+	margin-left    : 5px;
+	vertical-align : text-top
+}
+
+.no-js .mini-btn
+{
+	display : none
+}
+
+.share-links
+{
+	position : absolute;
+	right    : 16px;
+	z-index  : 2
+}
+
+.share-links a
+{
+	display : block;
+	padding : 10px
+}
+
+.share-links a:after
+{
+	transition : color 0.3s ease;
+	color      : #ccc
+}
+
+.share-links a:hover:after, .share-links a:focus:after
+{
+	color : #666
+}
+
+.twitter:after
+{
+	font-size : 2.4em;
+	content   : "\ea96"
+}
+
+.facebook:after
+{
+	font-size : 2.4em;
+	content   : "\ea90"
+}
+
+.google:after
+{
+	font-size : 2.6em;
+	content   : "\ea8b"
+}
+
+.pinterest:after
+{
+	font-size : 2.6em;
+	content   : "\ead1"
+}
+
+.md
+{
+	display : none
+}
+
+@media (min-width : 650px)
+{
+	:root
+	{
+		--title-height : 223px
+	}
+
+	.no-vars .title
+	{
+		min-height : 223px
+	}
+
+	.title
+	{
+		font-size : 0.8em;
+		margin    : 0
+	}
+
+	.title h1
+	{
+		top  : 2.8em;
+		left : 3.1em
+	}
+
+	main, .inner
+	{
+		width  : 90%;
+		margin : 0 auto
+	}
+
+	.generate
+	{
+		padding : 40px
+	}
+
+	.generate .col1
+	{
+		float : left
+	}
+
+	.generate .col2
+	{
+		width      : 60%;
+		margin-top : 0;
+		float      : right
+	}
+
+	.mini-btn
+	{
+		font-size : 1em;
+		padding   : 0.4em
+	}
+
+	.copy
+	{
+		top : -0.9em
+	}
+
+	.input-wrapper:before, .input-wrapper:after
+	{
+		width : 25px
+	}
+
+	.primary-btn
+	{
+		font-size : 1.2em
+	}
+
+	.primary-btn:after
+	{
+		right : 10px
+	}
+
+	#output
+	{
+		min-height : 300px
+	}
+
+	.share-links
+	{
+		width : auto;
+		top   : 10px
+	}
+
+	.share-links li
+	{
+		float : left
+	}
+
+	.md
+	{
+		display : block
+	}
+}
+
+@media (min-width : 700px)
+{
+	.generate .col2
+	{
+		width : 65%
+	}
+}
+
+@media (min-width : 800px)
+{
+	.generate .col2
+	{
+		width : 70%
+	}
+}
+
+@media (min-width : 1000px)
+{
+	.generate .col2
+	{
+		width       : 70%;
+		margin-left : 100px;
+		float       : left
+	}
+}
+
+@media (min-width : 1200px)
+{
+	:root
+	{
+		--title-height : 278px
+	}
+
+	.no-vars .title
+	{
+		min-height : 278px
+	}
+
+	.title
+	{
+		font-size : 1em
+	}
+
+	.title h1
+	{
+		top  : 3em;
+		left : 3.6em
+	}
+
+	main, .inner
+	{
+		width : 1200px
+	}
+
+	.generate
+	{
+		padding : 50px 60px
+	}
+
+	.text-input
+	{
+		padding : 20px 10px 20px 20px
+	}
+
+	.share-links
+	{
+		top   : 20px;
+		width : 46px
+	}
+
+	.share-links ul
+	{
+		position : fixed
+	}
+
+	.share-links li
+	{
+		float : none
+	}
+}
+
+.no-js .js-show
+{
+	display : none
+}
+
+.img-wrapper
+{
+	width         : 310px;
+	height        : 310px;
+	border-radius : 50%;
+	position      : relative;
+	margin        : 20px auto 20px auto;
+	transition    : box-shadow 0.5s ease
+}
+
+.img-wrapper:before
+{
+	content       : "";
+	position      : absolute;
+	top           : 0;
+	right         : 0;
+	bottom        : 0;
+	left          : 0;
+	margin        : auto;
+	border-radius : 50%;
+	border        : 1px solid transparent;
+	width         : 230px;
+	height        : 230px;
+	transition    : 0.5s ease
+}
+
+.img-wrapper.transition:before
+{
+	width  : 310px;
+	height : 310px;
+	border : 1px solid rgba(0, 0, 0, 0.2)
+}
+
+.img-wrapper img
+{
+	border-radius : 50%;
+	position      : absolute;
+	top           : 0;
+	right         : 0;
+	bottom        : 0;
+	left          : 0;
+	margin        : auto
+}
+
+article
+{
+	padding : 30px 30px 40px 30px;
+	clear   : left
+}
+
+.js .terminal-wrapper
+{
+	opacity   : 0;
+	transform : translateY(25px)
+}
+
+.js .terminal-wrapper.transition
+{
+	opacity   : 1;
+	transform : translateY(0px)
+}
+
+.terminal-wrapper
+{
+	transition : 0.5s ease;
+	padding    : 0px 30px 60px 30px
+}
+
+.terminal-wrapper a:link, .terminal-wrapper a:visited
+{
+	font-size : 1.3em
+}
+
+.terminal-wrapper a:link span, .terminal-wrapper a:visited span
+{
+	border-bottom : 1px solid #aaa
+}
+
+.terminal-wrapper .foot
+{
+	text-align : center;
+	padding    : 10px
+}
+
+.terminal
+{
+	width         : 100%;
+	margin        : 0 auto;
+	background    : #000;
+	border        : 1px solid #232325;
+	border-radius : 5px;
+	height        : 300px;
+	position      : relative;
+	color         : #ECECEC
+}
+
+.terminal .instruc
+{
+	font-size      : 14px;
+	display        : inline;
+	float          : left;
+	clear          : left;
+	margin         : 10px 13px 5px 13px;
+	padding-right  : 5px;
+	letter-spacing : 0.03em
+}
+
+.terminal .instruc span
+{
+	display    : inline-block;
+	margin-top : 7px
+}
+
+.terminal .instruc.first
+{
+	margin : 30px 13px 5px 13px
+}
+
+.terminal .instruc:last-child
+{
+	border-right : 8px solid #C616B7
+}
+
+.terminal .term-title
+{
+	text-align : center;
+	font-size  : 12px;
+	margin-top : 10px
+}
+
+.terminal .controls
+{
+	position : absolute;
+	top      : 11px;
+	left     : 3px
+}
+
+.terminal .controls span
+{
+	width         : 11px;
+	height        : 11px;
+	float         : left;
+	border-radius : 50%;
+	margin-left   : 9px
+}
+
+.terminal .controls .c1
+{
+	background : #FC605C
+}
+
+.terminal .controls .c2
+{
+	background : #FDBC40
+}
+
+.terminal .controls .c3
+{
+	background : #34C749
+}
+
+.github:after
+{
+	content        : "\eab0";
+	font-size      : 1.3em;
+	margin-left    : 6px;
+	vertical-align : middle
+}
+
+.instruction
+{
+	background : #efefef;
+	padding    : 5px;
+	font-size  : 1.2em
+}
+
+footer
+{
+	background : #efefef;
+	padding    : 40px 0 20px 0
+}
+
+footer a:link, footer a:visited
+{
+	border-bottom : 1px solid #aaa
+}
+
+.credits
+{
+	float  : left;
+	margin : 0 12px
+}
+
+.languages
+{
+	float  : right;
+	margin : 0 12px
+}
+
+.languages li
+{
+	margin-bottom : 8px
+}
+
+@media (min-width : 650px)
+{
+	.img-wrapper
+	{
+		float                 : left;
+		-webkit-shape-outside : circle(50%);
+		shape-outside         : circle(50%);
+		margin                : 20px 20px 20px 0
+	}
+
+	article
+	{
+		padding : 30px 40px 40px 40px
+	}
+
+	.terminal-wrapper
+	{
+		padding : 0px 40px 60px 40px
+	}
+
+	.terminal
+	{
+		width : 510px
+	}
+}
+
+@media (min-width : 1000px)
+{
+	article
+	{
+		padding-right : 80px
+	}
+}
+
+@media (min-width : 1200px)
+{
+	article
+	{
+		padding : 50px 180px 50px 60px
+	}
+
+	.terminal-wrapper
+	{
+		padding : 0px 70px 60px 70px
+	}
+}
